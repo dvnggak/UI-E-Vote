@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+.side-menu {
+    position: absolute;
+    width: 361px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.user-profile-img {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    left: 54px;
+    top: 69px; 
+    background: url(dashboard_assets/user_img/Ellipse\ 2.png);
+}
+
+.user-profile-id h4 {
+    position: absolute;
+    width: 73px;
+    height: 30px;
+    left: 146px;
+    top: 74px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.user-profile-id p {
+    position: absolute;
+    width: 149px;
+    height: 20px;
+    left: 146px;
+    top: 107px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.side-menu-items {
+    left: 54px;
+    top: 188px;
+    position: absolute;
+}
+
+.box-content {
+    color: #000000;
+}
+
+.links {
+    width: 241px;
+    height: 59px;
+    padding: 10px 0 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    border-radius: 15px;
+}
+
+.links:hover {
+    background-color: #9CE6FF !important;
+    transition: ease-in 0.5s;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links img {
+    left: 20px;
+    top: 17px;
+    padding-bottom: 5px;
+    right: 18px;
+    margin-right: 28px;
+}
+
+.nav-link {
+    margin-top: -3px;
+}
+
+.dashboard-content {
+    position: absolute;
+    width: 1079px;
+    height: 900px;
+    left: 361px;
+    top: 0px;
+    background: #F6FDFF;
+}
