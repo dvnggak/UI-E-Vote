@@ -90,6 +90,7 @@ body {
     padding-bottom: 5px;
     right: 18px;
     margin-right: 28px;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -103,4 +104,61 @@ body {
     left: 361px;
     top: 0px;
     background: #F6FDFF;
+}
+
+.date-update {
+    margin: 74px 0 0 70px;
+}
+
+.title {
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+.card-main {
+    display: grid;
+}
+
+.card-body {
+    position: absolute;
+    width: 458px;
+    height: 216px;
+    margin-left: 70px;
+    margin-top: 53px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.card-body img {
+    position: absolute;
+    margin: 40px 0 54px 49px;
+}
+
+.card-body h1 {
+    position: absolute;
+    margin: 64px 121px 92px 189px;
+}
+.card-body p {
+    position: absolute;
+    margin: 114px 48px 64px 189px;
+}
+
+.income {
+    position: absolute;
+    margin: 56px 69px 461px 552px
+}
+
+.income img {
+    position: absolute;
+    margin: 35px 369px 515px 30px;
+}
+
+.income h1 {
+    position: absolute;
+    margin: 35px 50px 91px 188px;
+    font-size: 34px;
+}
+
+.income p {
+    position: absolute;
 }
