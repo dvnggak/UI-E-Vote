@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+                        /* BEGIN OF DASHBOARD SIDE MENU PROFILE  */
+
+.side-menu {
+    position: absolute;
+    width: 361px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.user-profile-img {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    left: 54px;
+    top: 69px; 
+    background: url(dashboard_assets/user_img/Ellipse\ 2.png);
+}
+
+.user-profile-id h4 {
+    position: absolute;
+    width: 73px;
+    height: 30px;
+    left: 146px;
+    top: 74px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.user-profile-id p {
+    position: absolute;
+    width: 149px;
+    height: 20px;
+    left: 146px;
+    top: 107px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.side-menu-items {
+    left: 54px;
+    top: 188px;
+    position: absolute;
+}
+
+.box-content {
+    color: #000000;
+}
+
+.links {
+    width: 241px;
+    height: 59px;
+    padding: 10px 0 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    border-radius: 15px;
+}
+
+.links:hover {
+    background-color: #9CE6FF !important;
+    transition: ease-in 0.5s;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links img {
+    left: 20px;
+    top: 17px;
+    padding-bottom: 5px;
+    right: 18px;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-top: -3px;
+}
+
+                        /* END OF DASHBOARD SIDE MENU PROFILE  */
+
+                        /* BEGIN OF STYLE FOR SETTING CONTENT  */
+
+.dashboard-content {
+    position: absolute;
+    width: 1079px;
+    height: 900px;
+    left: 361px;
+    top: 0px;
+    background: #F6FDFF;
+}
+
+.date-update {
+    margin: 74px 0 0 70px;
+}
+
+.title {
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+.subTitle {
+    margin-left: 70px;
+    top: 26px;
+}
+
+                    /* END OF STYLE FOR SETTING CONTENT  */
+
+                    /* BEGIN OF PASSWORD FORM STYLE  */
+
+.password-form {
+    position: absolute;
+    width: 564px;
+    height: 600px;
+    margin: 34px 445px 43px 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin: 43px 404px 0 42px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form-group label {
+    width: 250px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+}
+
+input {
+    width: 479px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+                        /* BEGIN OF SHOW AND HIDE TOGLE FOR PASSWORD FORM  */
+.form-group div {
+    position: absolute;
+    background: none;
+    border: none;
+    float: right;
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+#hide {
+    display: none;
+}
+
+#hideNew {
+    display: none;
+}
+
+#hideConfirm {
+    display: none;
+}
+                        /* END OF SHOW AND HIDE TOGLE FOR PASSWORD FORM  */
+
+                        /* END OF PASSWORD FORM STYLE  */
+
+                        /* BEGIN OF FORGOT PASSWORD LINK STYLE  */
+.forgot-link a {
+    position: absolute;
+    width: 200px;
+    height: 23px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+    text-decoration: none;
+    margin-left: 42px;
+    margin-top: 125px   ;
+}
+
+.forgot-link a:hover {
+    text-decoration: solid underline;
+}
+
+                        /* END OF FORGOT PASSWORD LINK STYLE  */
+
+
+                        /* BEGIN OF PASSWORD SAVE BUTTON STYLE  */
+.btn-block {
+    position: absolute;
+    width: 479px;
+    height: 57px;
+    background: #9CE6FF;
+    border-radius: 10px;
+    margin: 165px 43px 44px 42px;
+    font-weight: bold;
+}
+
+                        /* END OF PASSWORD SAVE BUTTON STYLE  */
+
+                        /* END OF STYLE FOR SETTING CONTENT  */
