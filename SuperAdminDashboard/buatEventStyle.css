@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+                        /* BEGIN OF DASHBOARD SIDE MENU PROFILE  */
+
+.side-menu {
+    position: absolute;
+    width: 361px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.user-profile-img {
+    position: absolute;
+    width: 66px;
+    height: 66px;
+    left: 54px;
+    top: 69px; 
+    background: url(dashboard_assets/user_img/Ellipse\ 2.png);
+}
+
+.user-profile-id h4 {
+    position: absolute;
+    width: 73px;
+    height: 30px;
+    left: 146px;
+    top: 74px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.user-profile-id p {
+    position: absolute;
+    width: 149px;
+    height: 20px;
+    left: 146px;
+    top: 107px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.side-menu-items {
+    left: 54px;
+    top: 188px;
+    position: absolute;
+}
+
+.box-content {
+    color: #000000;
+}
+
+.links {
+    width: 241px;
+    height: 59px;
+    padding: 10px 0 5px 0;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    border-radius: 15px;
+}
+
+.links:hover {
+    background-color: #9CE6FF !important;
+    transition: ease-in 0.5s;
+}
+
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links img {
+    left: 20px;
+    top: 17px;
+    padding-bottom: 5px;
+    right: 18px;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.nav-link {
+    margin-top: -3px;
+}
+
+                        /* END OF DASHBOARD SIDE MENU PROFILE  */
+
+                        /* BEGIN OF DASHBOARD BUAT EVENT CONTENT  */
+
+.dashboard-content {
+    position: absolute;
+    width: 1079px;
+    height: 900px;
+    left: 361px;
+    top: 0px;
+    background: #F6FDFF;
+}
+
+.date-update {
+    margin: 74px 0 0 70px;
+}
+
+.title {
+    margin-left: 70px;
+    margin-top: 6px;
+}
+
+
+.card-body {
+    position: absolute;
+    width: 940px;
+    height: 350px;
+    margin-top: 35px;
+    margin-left: 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.event-name {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.event-name label {
+    position: absolute;
+    font-family: Quicksand;
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    width: 860px;
+    margin-top: 45px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.row {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+label {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.card {
+    border: none;
+}
+
+.col-md-4 input {
+    width: 311px;
+    height: 58px;
+    background: #9CE6FF;
+    border-radius: 10px;
+}
+
+.row {
+    display: inline-block;
+    position: absolute;
+    flex-direction: column;
+}
+
+.row input {
+    cursor: pointer;
+}
+
+.finish {
+    margin-left: 578px;
+}
+
+.dropdown {
+    position: relative;
+    margin-top: 182px;
+    margin-left: 15px;
+}
+
+.dropdown label {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+.card-body-candidate {
+    position: absolute;
+    width: 940px;
+    height: 280px;
+    margin-top: 415px;
+    margin-left: 70px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.card-body-candidate h3 {
+    margin-top: 28px;
+    margin-left: 40px;
+}
+
+.event-candidate {
+    display: grid;
+    margin-top: -20px;
+    margin-left: 18px;
+}
+
+.half-width {
+    width: 393px;
+    margin-top: 25px;
+    margin-left: 14px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+}
+
+.upload {
+    margin-left: 578px;
+}
+
+.upload a {
+    text-align: center;
+    width: 235px;
+    height: 45px;
+    background: #9CE6FF;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.addBtn button {
+    position: absolute;
+    width: 275px;
+    height: 57px;
+    background: #9CE6FF;
+    border-radius: 10px;
+    margin-top: 145px;
+    margin-left: 30px;
+}
+
+.submit-btn {
+    position: absolute;
+    display:grid;
+    margin-top: -120px ; 
+    margin-left: 760px;
+}
+
+.submit-btn input {
+    position: relative;
+    width: 250px;
+    height: 58px;
+    background: #9CE6FF;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.submit-btn input:hover {
+    background-color: #ffffff;
+    transition: ease-in .3s;
+}
+
+
+                        /* END OF DASHBOARD BUAT EVENT CONTENT  */
