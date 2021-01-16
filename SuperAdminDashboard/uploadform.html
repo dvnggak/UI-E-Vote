@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b03910148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="uploadFormStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Upload Foto
+        </h1>
+        <p>
+            Diam proin in felis pulvinar <br> aliquet laoreet.
+        </p>
+        <form id="dropFileForm" action="" method="post" onsubmit="uploadFiles(event)">
+            <input type="file" name="files[]" id="fileInput" multiple onchange="addFiles(event)">
+            <label for="fileInput" id="fileLabel" class="dropFileForm-text"
+            ondragover="overRideDefault (event);fileHover();"
+            ondragenter="overRideDefault (event);fileHover();"
+            ondragleave="overRideDefault (event);fileHoverEnd();"
+            ondrop="overRideDefault (event);fileHoverEnd();
+                addFiles(event);">
+                <br>
+                <br>
+                <i class="fa fa-download fa-2x"></i>  <br>
+                <span id="fileLabelText">
+                    Drag & Drop Your Files Here 
+                </span>
+                
+                <br> Or 
+                <br>
+                
+                
+                
+                <span class="btn float-center">
+                    Browse File 
+                </span>
+                <br>
+                <br>
+                <span id="uploadStatus"></span>
+            </label>
+
+                <!-- SUBMIT BUTTON  -->
+            <input type="submit" value="Upload Files" class="uploadButton">
+                <!-- END SUBMIT BUTTON  -->
+        </form>
+
+                        <!-- SCRIPT FOR DRAG & DROP FORM  -->
+        <script>
+            var dropFileForm = document.getElementById("dropFileForm");
+            var droppedFiles;
+            var fileLabelText = document.getElementById("fileLabelText");
+            var uploadStatus = document.getElementById("uploadStatus");
+            var fileInput = document.getElementById("fileInput");
+
+                // SCRIPT TO OVERRIDE DEFAULT SETTING 
+            function overRideDefault (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+                // MAIN FUNcTION SCRIPT 
+            function fileHover () {
+                dropFileForm.classList.add("fileHover");
+            }
+
+            function fileHoverEnd () {
+                dropFileForm.classList.remove("fileHover");
+            }
+
+            function addFiles (event) {
+                droppedFiles = event.target.files || event.dataTransfer.files;
+                showFiles(droppedFiles);
+            }
+
+            function showFiles (files) {
+                if (files.length > 1) {
+                    fileLabelText.innerText = files.length + "Files Selected";
+                }
+                else {
+                    fileLabelText.innerText = files[0].name;
+                }
+            }
+                    // UPLOAD NYA BELUM WORK DIPERSILAHKAN UNTUK DI UBAH SC NYA TERIMA KASIH 
+
+            function uploadFiles(event) {
+                event.preventDefault();
+                changeStatus("Uploading ...");
+
+                var formData = new FormData();
+
+                for(var i = 0, file; file = droppedFiles[i]; i++) {
+                    formData.append(fileInput.name,file,file.name)
+                }
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function (data) {
+                    // HANDLE SERVER RESPONSE AND CHANGE STATUS OF UPLOAD PROCESS VIA CHANGESTATUS(TEXT)
+                }
+                xhr.open(dropFileForm.method,dropFileForm.action,true);
+                xhr.send(formData);
+            }
+
+            function changeStatus(text) {
+                uploadStatus.innerText = text;
+            }
+        </script>
+    </div>
+</body>
+</html>
