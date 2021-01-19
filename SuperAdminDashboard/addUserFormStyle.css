@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DBE5EB;
+}
+
+.container {
+    position: absolute;
+    width: 757px;
+    height: 884px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.adduser {
+    position: relative;
+    margin: 66px 0 0 66px;
+}
+
+.form-group {
+    margin-bottom: 31px;
+}
+
+
+.form-group label {
+    width: 200px;
+    height: 28px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.form-group input {
+    width: 626px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    text-align: center;
+}
+
+.no-outline:focus {
+    outline: none;
+}
+
+.form-group div {
+    position: absolute;
+    background: none;
+    border: none;
+    float: right;
+    margin-left: 600px;
+    cursor: pointer;
+}
+
+#hide {
+    display: none;
+}
+
+#hideNew {
+    display: none;
+}
+
+.add-btn {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 57px 66px 0 65px;
+}
+
+.add-btn button {
+    width: 626px;
+    height: 57px;
+    border-radius: 10px;
+}
+
+.btn-done {
+    background: #9CE6FF;
+    margin-bottom: 17px;
+}
+
+.btn-cancel {
+    background: #FFFFFF;
+    border: 2px solid #DBE5EB;
+}
+
+.add-btn button:hover {
+    border: 5px solid #DBE5EB;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
