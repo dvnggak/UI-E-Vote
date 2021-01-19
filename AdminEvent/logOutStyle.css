@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #DBE5EB;
+}
+
+.container {
+    position: absolute;
+    width: 635px;
+    height: 627px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.img-master {
+    margin: 69px 178px 21px 180px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.title p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 11px;
+}
+
+.add-btn {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    margin: 58px 44px 57px 44px;
+}
+
+.add-btn button {
+    border-radius: 10px;
+    width: 250px;
+    height: 57px;
+}
+
+.btn-done {
+    background: #9CE6FF;
+    margin-right: 12px;
+}
+
+.btn-cancel {
+    background: #FFFFFF;
+    border: 4px solid #DBE5EB;
+}
+
+.add-btn button:hover {
+    border: 5px solid #DBE5EB;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
