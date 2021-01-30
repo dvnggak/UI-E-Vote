@@ -1,0 +1,895 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  'Quicksand', sans-serif;
+    background-color: #ffffff;
+}
+
+
+                            /* BEGIN OF NAVIGATION MENU STYLE  */
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 25px;
+}
+
+.menu a {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+.brand {
+    margin-top: 0px;
+    margin-left: 60px;
+    margin-right: 500px;
+}
+
+                            /*BEGIN OF ANIMATION FOR NAVIGATIONS MENU  */
+
+.links {
+    position: relative;
+}
+
+.links:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: solid #261F63;
+    transition: width .5s ease;
+    -webkit-transition: width .5s ease;
+}
+
+.links:hover::after {
+    width: 100%;
+    left: 0;
+    background: #261F63;
+}
+
+                            /* END OF ANIMATION FOR NAVIGATION MENU  */
+
+
+                                /* END OF NAVIGATION MENU STYLE  */
+
+                                /* BEGIN OF FIRST CONTAINER STYLE  */
+
+.container {
+    width: 1440px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.container h1 {
+    position: absolute;
+    width: 270px;
+    height: 60px;
+    left: 109px;
+    top: 170px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.container p {
+    position: absolute;
+    width: 750px;
+    height: 52px;
+    left: 109px;
+    top: 243px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.container h4 {
+    position: absolute;
+    width: 224px;
+    height: 35px;
+    left: 109px;
+    top: 329px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+}
+
+
+                /* BEGIN OF GRID FOR VOTES ON RUN STYLE  */
+
+.card {
+    position: absolute;
+    display: inline-block;
+}
+
+.card-male {
+    position: absolute;
+    width: 592px;
+    height: 423px;
+    left: 15px;
+    top: 402px;
+    background: #E4F8FF;
+    border-radius: 20px;
+}
+
+.card-male-title {
+    display: inline-flex;
+    margin: 37px 0 0 40px;
+}
+
+.card-male-title h3 {
+    position: relative;
+    width: 74px;
+    height: 35px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.card-male-title span:hover {
+    text-decoration: underline;
+}
+
+.card-male-title a {
+    text-decoration: none;
+    position: absolute;
+    width: 197px;
+    height: 20px;
+    left: 450px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card-male-title a:hover {
+    text-decoration: underline;
+}
+
+.card-male-title a i {
+    margin-left: 5px;
+}
+
+.card-male-title a i:hover {
+    text-decoration: underline;
+}
+
+
+
+.male-status-box {
+    position: absolute;
+    display: inline-block;
+    width: 512px;
+    height: 83px;
+    margin-top: 25px;
+    margin-left: 40px;
+    background: #9CE6FF;
+    border-radius: 20px;
+}
+
+.second {
+    margin-top: 128px;
+}
+
+.third {
+    margin-top: 231px;
+}
+
+
+.male-status-box h5 {
+    width: 23px;
+    height: 23px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 30px 30px 30px 25px;
+}
+
+.male-status-box img {
+    width: 58.17px;
+    height: 58.17px;
+    margin-top: -110px;
+    margin-left: 75px;
+}
+
+.male-status-box .male-info h5 {
+    width: 249px;
+    height: 42px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: -85px;
+    margin-left: 153px;
+}
+
+.male-info .progress-bar {
+    width: 234px;
+    height: 9px;
+    background: #F7719C;
+    border-radius: 5px;
+    margin-top: -40px;
+    margin-left: 153px;
+}
+
+.male-info .progress-bar .on-going-progress {
+    width: 120px;
+    height: 9px;
+    left: 299px;
+    top: 552px;
+    background: #F24570;
+    border-radius: 5px;
+}
+
+.male-info h3 {
+    margin-left: 430px;
+    margin-top: -35px;
+}
+
+.card-female {
+    position: absolute;
+    width: 592px;
+    height: 423px;
+    left: 635px;
+    top: 402px;
+    background: #E4F8FF;
+    border-radius: 20px;
+}
+
+.card-female-title {
+    display: inline-flex;
+    margin: 37px 0 0 40px;
+}
+
+.card-female-title h3 {
+    position: relative;
+    width: 74px;
+    height: 35px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.card-female-title span:hover {
+    text-decoration: underline;
+}
+
+.card-female-title a {
+    text-decoration: none;
+    position: absolute;
+    width: 197px;
+    height: 20px;
+    left: 450px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.card-female-title a:hover {
+    text-decoration: underline;
+}
+
+.card-female-title a i {
+    margin-left: 5px;
+}
+
+.card-female-title a i:hover {
+    text-decoration: underline;
+}
+
+.female-status-box {
+    position: absolute;
+    display: inline-block;
+    width: 512px;
+    height: 83px;
+    margin-top: 25px;
+    margin-left: 40px;
+    background: #9CE6FF;
+    border-radius: 20px;
+}
+
+.second {
+    margin-top: 128px;
+}
+
+.third {
+    margin-top: 231px;
+}
+
+
+.female-status-box h5 {
+    width: 23px;
+    height: 23px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 30px 30px 30px 25px;
+}
+
+.female-status-box img {
+    width: 58.17px;
+    height: 58.17px;
+    margin-top: -110px;
+    margin-left: 75px;
+}
+
+.female-status-box .female-info h5 {
+    width: 249px;
+    height: 42px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: -85px;
+    margin-left: 153px;
+}
+
+.female-info .progress-bar {
+    width: 234px;
+    height: 9px;
+    background: #F7719C;
+    border-radius: 5px;
+    margin-top: -40px;
+    margin-left: 153px;
+}
+
+.female-info .progress-bar .on-going-progress {
+    width: 120px;
+    height: 9px;
+    left: 299px;
+    top: 552px;
+    background: #F24570;
+    border-radius: 5px;
+}
+
+.female-info h3 {
+    margin-left: 430px;
+    margin-top: -35px;
+}
+
+
+
+
+                /* END OF GRID FOR VOTES ON RUN STYLE  */
+
+
+                                /* END OF FIRST CONTAINER STYLE */
+
+
+                                /* BEGIN OF SECOND CONTAINER STYLE  */
+.second-container {
+    position: absolute;
+    width: 1440px;
+    height: 1080px;
+    left: 0px;
+    top: 900px;
+    background: #FFFFFF;
+}
+
+.second-container h2 {
+    position: absolute;
+    width: 126px;
+    height: 60px;
+    left: 109px;
+    top: 110px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.second-container p {
+    position: absolute;
+    width: 389px;
+    height: 30px;
+    left: 109px;
+    top: 180px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.male-preview {
+    width: 1222px;
+    height: 728px;
+    margin-left: 109px;
+    margin-top: 242px;
+    background: #E4F8FF;
+    border-radius: 20px;
+}
+
+
+                /* BEGIN OF GRID SYSTEM FOR MALE VOTE  */
+.container-cards {
+    position: relative;
+    width: 1222px;
+    height: 728px;
+    left: 109px;
+    top: 242px;
+    background: #E4F8FF;
+    border-radius: 20px;
+}
+
+.cards {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cards-grid-male {
+    position: relative;
+    width: 354px;
+    height: 242px;
+    top: 46px;
+    left: 55px;
+    background: #9CE6FF;
+    border-radius: 20px;
+}
+
+
+.cards-grid-male-image {
+    display: inline-block;
+}
+
+.cards-grid-male-image img {
+    width: 98px;
+    height: 98px;
+    margin: 38px 0 0 36px;
+}
+
+.cards-grid-male-title {
+    display: inline-flex;
+
+}
+.cards-grid-male-title h5{
+    width: 161px;
+    height: 30px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    color: #000000;
+    margin-left: 30px;
+}
+.cards-grid-male-title p{
+    display: flex;
+    width: 149px;
+    height: 23px;
+    top: 79px;
+    margin-left: 60px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;   
+}
+
+.cards-grid-male  .progress-bar {
+    width: 277px;
+    height: 9px;
+    background: #F7719C;
+    border-radius: 5px;
+    margin: 3px 0 54px 32px;
+}
+
+.cards-grid-male .progress-bar .on-going-progress {
+    width: 152px;
+    height: 9px;
+    background: #F24570;
+    border-radius: 5px;
+}
+
+.percentage-vote {
+    width: 50px;
+    height: 24px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 24px;
+    margin-left: 40px;
+}
+
+.percentage-vote span p {
+    width: 92px;
+    height: 19px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: -17px;
+    margin-left: 105px;
+}
+
+
+
+
+
+                /* END OF GRID SYSTEM FOR MALE VOTE  */
+
+                /* BEGIN FOR BUTTON IN CONTAINERS CARDS  */
+.container-cards button {
+    width: 354px;
+    height: 77px;
+    background: #261F63;
+    border-radius: 20px;
+    margin: 90px 0 46px 55px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+}
+
+
+
+
+                /* END FOR BUTTON IN CONTAINERS CARDS  */
+
+                /* BEGIN OF STYLE FOR PAGINATION TOOLS */
+
+.page ul li {
+    border-radius: 20px;
+}
+
+.pagination {
+    margin-top: -120px;
+    margin-right: 55px;
+}
+
+.page-item {
+    border-radius: 20px;
+    width: 77px;
+    height: 77px;
+    text-align: center;
+    align-items: center;
+}
+
+.left-btn {
+    margin-right: 25px;
+    background: #DFDFDF;
+}
+
+.left-btn a {
+    color: #C4C4C4;
+}
+
+.left-btn a i {
+    margin-top: 7px;
+}
+
+.right-btn {
+    background: rgba(105, 205, 255, 0.3);
+}
+
+.right-btn a {
+    color: #261F63;
+}
+
+.right-btn a i {
+    margin-top: 7px;
+}
+
+
+                /* END OF STYLE FOR PAGINATION TOOLS */
+
+                                /* END OF SECOND CONTAINER STYLE  */
+
+                                /* BEGIN OF THIRD CONTAINER STYLE*/
+.third-container {
+    position: absolute;
+    width: 1440px;
+    height: 1080px;
+    left: 0px;
+    top: 1980px;
+    background: #FFFFFF;
+}
+
+.third-container h2 {
+    position: absolute;
+    width: 126px;
+    height: 60px;
+    left: 109px;
+    top: 110px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.third-container p {
+    position: absolute;
+    width: 389px;
+    height: 30px;
+    left: 109px;
+    top: 180px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+                /* BEGIN OF GRID SYSTEM FOR MALE VOTE  */
+.container-cards {
+    position: relative;
+    width: 1222px;
+    height: 728px;
+    left: 109px;
+    top: 242px;
+    background: #E4F8FF;
+    border-radius: 20px;
+}
+
+.cards {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cards-grid-female {
+    position: relative;
+    width: 354px;
+    height: 242px;
+    top: 46px;
+    left: 55px;
+    background: #9CE6FF;
+    border-radius: 20px;
+}
+
+
+.cards-grid-female-image {
+    display: inline-block;
+}
+
+.cards-grid-female-image img {
+    width: 98px;
+    height: 98px;
+    margin: 38px 0 0 36px;
+}
+
+.cards-grid-female-title {
+    display: inline-flex;
+
+}
+.cards-grid-female-title h5{
+    width: 161px;
+    height: 30px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    color: #000000;
+    margin-left: 30px;
+}
+.cards-grid-female-title p{
+    display: flex;
+    width: 149px;
+    height: 23px;
+    top: 79px;
+    margin-left: 60px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;   
+}
+
+.cards-grid-female  .progress-bar {
+    width: 277px;
+    height: 9px;
+    background: #F7719C;
+    border-radius: 5px;
+    margin: 3px 0 54px 32px;
+}
+
+.cards-grid-female .progress-bar .on-going-progress {
+    width: 152px;
+    height: 9px;
+    background: #F24570;
+    border-radius: 5px;
+}
+
+.percentage-vote {
+    width: 50px;
+    height: 24px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 24px;
+    margin-left: 40px;
+}
+
+.percentage-vote span p {
+    width: 92px;
+    height: 19px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-top: -17px;
+    margin-left: 105px;
+}
+
+
+                                /* END OF THIRD CONTAINER STYLE */ 
+
+                                /* BEGIN OF FOOTER LANDING PAGE  */
+footer {
+    position: absolute;
+    display: flex;
+    width: 1480px;
+    height: 341px;
+    left: 0px;
+    top: 3060px;
+    background: #261F63;
+}
+
+.company-logo {
+    margin: 69px 0 0 106px;
+}
+
+.company-logo h1 {
+    width: 250px;
+    height: 40px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.company-contact {
+    margin: 69px 0 0 180px;
+}
+
+.company-contact h1 {
+    width: 169px;
+    height: 40px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.company-contact ul {
+    margin-left: -30px;
+}
+
+.company-contact ul li {
+    list-style: none;
+    width: 300px;
+    height: 30px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 12px;
+    color: #FFFFFF;
+}
+
+.company-contact ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.company-contact ul li a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.company-media {
+    margin: 69px 0 0 235px;
+}
+
+.company-media h1 {
+    width: 193px;
+    height: 40px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.company-media ul  {
+    display: inline-flex;
+    margin-left: -50px;
+}
+
+.company-media ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.company-media ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+                                /* END OF FOOTER LANDING PAGE  */
