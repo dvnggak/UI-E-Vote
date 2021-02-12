@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:  'Quicksand', sans-serif;
+    background-color: #ffffff;
+}
+
+                                /* BEGIN TO SET CONTAINER WIDTH FOR ALL CHILD  */
+
+.container {
+    position: relative;
+    display: flex;
+    width: 1320px;
+    height: 1151px;
+}
+
+                                    /* BEGIN OF STYLE FOR METHOD PANEL  */
+
+.methodPanel {
+    width: 660px;
+    height: 1151px;
+    background: #E4F8FF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.btn-slide {
+    display: inline-flex;
+    width: 450px;
+    height: 79px;
+    background: #69CDFF;
+    border-radius: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 55px;
+    margin-left: 90px;
+}
+
+.btn-slide button {
+    width: 210px;
+    height: 64px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 7px;
+}
+
+/* .btn-slide button:first-child {
+    color: #000000;
+    margin-right: 5px;
+    background-color: #ffffff;
+} */
+
+.btn-slide button:last-child {
+    margin-left: 5px;
+}
+
+.btn-slide button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+                /* BEGIN FOR BANK OPTION FOR BUTTON SLIDE  */
+
+.bank-options {
+    display: inline-flex;
+    text-align: center;
+    margin-top: 73px;
+    margin-left: 76px;
+}
+
+.bank-options button {
+    width: 150px;
+    height: 75px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
+    background: #69CDFF;
+    border-radius: 10px;
+    margin-right: 26px;
+}
+
+.bank-options button:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+                /* END FOR BANK OPTION FOR BUTTON SLIDE  */
+
+                /* BEGIN OF STYLE FOR HOW-TO-DO- LIST FOR EACH BANK WITH DISPLAY BLOCK ON CLICK  */
+
+.list-group {
+    width: 500px;
+    height: 415px;
+    margin-top: 73px;
+    margin-left: 76px;
+}
+
+.list-group ul li {
+    list-style: none;
+    display: inline-flex;
+    width: 475px;
+    height: 79px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.list-group ul li .rounded-number {
+    text-align: center;
+    width: 125px;
+    height: 60px;
+    background: #69CDFF;
+    border-radius: 35px;
+    margin-left: -30px;
+    margin-right: 38px;
+}
+
+.list-group ul li .rounded-number p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 13px;
+}
+
+                /* END OF STYLE FOR HOW-TO-DO- LIST FOR EACH BANK WITH DISPLAY BLOCK ON CLICK  */
+
+
+                                    /* END OF STYLE FOR METHOD PANEL  */
+
+                                    /* BEGIN OF STYLE FOR UPLOAD FORM  */
+
+.uploadForm {
+    width: 660px;
+    height: 1151px;
+    background: #FFFFFF;
+    border-radius: 0px 20px 20px 0px;
+    text-align: center;
+}
+
+.main-img img {
+    width: 349px;
+    height: 349px;
+    margin-top: 72px;
+}
+
+.uploadForm h4 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.uploadForm p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    margin-top: 15px;
+}
+
+                    /* BEGIN OF OPLOAD BOX FOR PAYMENT TRANSFER  */
+
+/* .upload-box {
+    width: 550px;
+    height: 384px;
+    background: #FFFFFF;
+    border: 1px dashed #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 37px;
+    text-align: center;
+}
+
+
+
+.upload-box p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+.upload-box p a {
+    text-decoration: none;
+    color: ;
+} */
+
+#dropFileForm {
+    text-align: center;
+    justify-content: center;
+    place-content: center;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.before-img {
+    margin-top: 53px;
+}
+
+
+#dropFileForm #fileLabel {
+    display: block;
+    position: relative;
+    width: 550px;
+    height: 384px;
+    background: #FFFFFF;
+    border: 1px dashed #CFCFCF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-left: 60px;
+    margin-top: 37px;
+    text-align: center;
+}
+
+#dropFileForm #fileLabel:hover {
+    width: 550px;
+    height: 384px;
+    background: #F4FCFF;
+    border: 1px dashed #69CDFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-image: url(../popUp/assets/popUp_uploadPaymentProof/upload_hover.png);
+    background-repeat: no-repeat;
+    background-position-y: 53px;
+    background-position-x: center;
+}
+
+#dropFileForm #fileLabelText {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+#dropFileForm #fileLabelText p {
+    color: #69CDFF;
+    cursor: pointer;
+}
+
+#dropFileForm #fileLabelText p:hover {
+    text-decoration: underline;
+}
+
+#fileLabelTextDissable {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #BAC2C7;
+}
+
+
+#dropFileForm #fileInput {
+    display: none;
+}
+
+#dropFileForm #fileLabel::after,
+#dropFileForm #fileLabel::before {
+    position: absolute;
+    content: "";
+    background-color: #FFF;
+    z-index: -2;
+}
+
+#dropFileForm #fileLabel::before {
+    z-index: -1;
+    background: repeating-linear-gradient(45deg,
+                                        transparent,
+                                        transparent 5%,
+                                        black 5%,
+                                        black 10%);
+    opacity: 0;
+    transition: .5s;
+}
+
+#dropFileForm .fileHover #filelabel::before {
+    opacity: .25;
+}
+
+#dropFileForm .uploadStatus {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+
+
+#dropFileForm .uploadButton {
+    width: 212px;
+    height: 58px;
+    background: #9CE6FF;
+    border-radius: 10px;
+    border: none;
+}
+
+        /* ON HOVER DRAG STYLE  */
+#dropFileForm .fileHover {
+    box-shadow:0 0 16px #000000;
+}
+
+#dropFileForm .btn {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: #9CE6FF;
+    border-radius: 10px;
+}
+
+#dropFileForm .uploadButton {
+    width: 450px;
+    height: 59px;
+    background: #261F63;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-top: 60px;
+    margin-left: 10px;
+    outline: none;
+}
+
+                    /* ENS OF OPLOAD BOX FOR PAYMENT TRANSFER  */
+
+
+                                    /* END OF STYLE FOR UPLOAD FORM  */
+

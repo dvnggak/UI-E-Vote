@@ -57,7 +57,7 @@ body {
 }
 
 .btn-done {
-    background: #9CE6FF;
+    background: #9CE6FF !important;
     margin-right: 12px;
 }
 

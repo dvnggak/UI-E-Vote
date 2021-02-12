@@ -99,6 +99,113 @@ body {
     margin-top: -3px;
 }
 
+                        /* BEGIN OF STYLE FOR BUTTON MODAL  */
+
+                        .side-menu-items button {
+                            background: none;
+                            outline: none;
+                            border: none;
+                        }
+                        
+                        .side-menu-items button img {
+                            margin-left: -100px;
+                        }
+                        
+                        .side-menu-items button:hover {
+                            background-color: #9CE6FF !important;
+                            transition: ease-in 0.5s;
+                        }
+                        
+                        .nav-item button {
+                            border-radius: 15px;
+                            margin-top: -5px;
+                        }                        /* BEGIN OF STYLE FOR BUTTON MODAL  */
+
+                        .side-menu-items button {
+                            background: none;
+                            outline: none;
+                            border: none;
+                        }
+                        
+                        .side-menu-items button img {
+                            margin-left: -100px;
+                        }
+                        
+                        .side-menu-items button:hover {
+                            background-color: #9CE6FF !important;
+                            transition: ease-in 0.5s;
+                        }
+                        
+                        .nav-item button {
+                            border-radius: 15px;
+                            margin-top: -5px;
+                        }
+
+                         /* BEGIN LOGOUT MODAL  */
+                         .modal-content-logout {
+                            position: absolute;
+                            width: 635px;
+                            height: 627px;
+                            background: #FFFFFF;
+                            border-radius: 20px;
+                            margin-left: 100px;
+                            margin-top: 50px;
+                        }
+                        
+                        .img-master {
+                            margin: 69px 178px 21px 180px;
+                        }
+                        
+                        .title {
+                            text-align: center;
+                        }
+                        
+                        .title h3 {
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 36px;
+                            line-height: 45px;
+                            color: #000000;
+                        }
+                        
+                        .title p {
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 20px;
+                            line-height: 35px;
+                            color: #000000;
+                            margin-top: 11px;
+                        }
+                        
+                        .add-btn-logout {
+                            display: inline-flex;
+                            text-align: center;
+                            margin-left: 44px;
+                        }
+                        
+                        .add-btn-logout button {
+                            border-radius: 10px;
+                            width: 250px;
+                            height: 57px;
+                        }
+                        
+                        .btn-done {
+                            background: #9CE6FF !important;
+                            margin-right: 12px;
+                        }
+                        
+                        .btn-cancel {
+                            background: #FFFFFF;
+                            border: 4px solid #DBE5EB;
+                        }
+                        
+                        .add-btn button:hover {
+                            border: 5px solid #DBE5EB;
+                            box-sizing: border-box;
+                            border-radius: 10px;
+                        }
+                        /* END LOGOUT MODAL  */
+
                     /* END OF DASHBOARD SIDE MENU PROFILE  */
 
                     /* BEGIN OF STYLE FOR DASHBOARD TAMBAH USER CONTENT  */
@@ -115,8 +222,8 @@ body {
     margin: 74px 0 0 70px;
 }
 
-.title {
-    margin-left: 70px;
+.title h1  {
+    margin-left: -755px;
     margin-top: 6px;
 }
 
@@ -234,5 +341,103 @@ td button {
 
 
             /* END OF TAMBAH USER TABEL WITH SCROLLING  */
+
+            /* MODAL  */
+            .modal-content {
+                width: 757px;
+                height: 884px;
+                background: #FFFFFF;
+                border-radius: 20px;
+
+            }
+            
+            .modal-content h1 {
+                font-family: Quicksand;
+                font-style: normal;
+                font-weight: bold;
+                color: #000000;
+                text-align: center;
+                margin-top: 50px;
+            }
+            
+            .adduser {
+                position: relative;
+                margin: 66px 0 0 66px;
+            }
+            
+            .form-group {
+                margin-bottom: 31px;
+            }
+            
+            
+            .form-group label {
+                width: 200px;
+                height: 28px;
+                font-family: Quicksand;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                color: #000000;
+                margin-bottom: 35px;
+            }
+            
+            .form-group input {
+                width: 626px;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+                text-align: center;
+            }
+            
+            .no-outline:focus {
+                outline: none;
+            }
+            
+            .form-group div {
+                position: absolute;
+                background: none;
+                border: none;
+                float: right;
+                margin-left: 600px;
+                cursor: pointer;
+            }
+            
+            #hide {
+                display: none;
+            }
+            
+            #hideNew {
+                display: none;
+            }
+            
+            .add-btn {
+                text-align: center;
+                margin: 57px 66px 0 65px;
+            }
+            
+            .add-btn button {
+                width: 626px;
+                height: 57px;
+                border-radius: 10px;
+            }
+            
+            .btn-done {
+                background: #9CE6FF;
+                margin-bottom: 17px;
+            }
+            
+            .btn-cancel {
+                background: #FFFFFF;
+                border: 4px solid #DBE5EB;
+            }
+            
+            .add-btn button:hover {
+                border: 5px solid #DBE5EB;
+                box-sizing: border-box;
+                border-radius: 10px;
+            }
+            /* END MODAL */
                         
                         /* END OF STYLE FOR  TAMBAH USER CONTENT  */
