@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b03910148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+                                <!-- BEGIN OF SIDE BAR MENU  -->
+    <nav id="after-nav" >
+        <div class="arrow" >
+            <img class="img-fluid openbtn"onclick="openNav()" src="../Assets/icons_side_menu/arrow.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <img src="../Assets/icons_side_menu/home.png" alt="">
+            </li>
+            <li>
+                <img src="../Assets/icons_side_menu/make.png" alt="">
+            </li>
+            <li>
+                <img src="../Assets/icons_side_menu/date.png" alt="">
+            </li>
+            <li>
+                <img src="../Assets/icons_side_menu/list.png" alt="">
+            </li>
+            <li>
+                <img src="../Assets/icons_side_menu/pay.png" alt="">
+            </li>
+            <li>
+                <img src="../Assets/icons_side_menu/add.png" alt="">
+            </li>
+        </ul>
+        <button>
+            <img src="../Assets/icons_side_menu/logout.png" alt="">
+        </button>
+    </nav>
+                <!-- BEGIN OF COLLAPSED SIDE BAR ON CLICK  -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../Assets/icons_side_menu/arrow_left.png" alt=""></a>
+        <a href="#"><img src="../Assets/icons_side_menu/home.png" alt="">
+            <span>Home</span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/make.png" alt="">
+            <span>
+                Buat Event
+            </span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/date.png" alt="">
+            <span>
+                Atur Event
+            </span> 
+            </a>
+        <a href="#"><img src="../Assets/icons_side_menu/list.png" alt="">
+            <span>
+                Atur Testimoni
+            </span>
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/pay.png" alt="">
+            <span>
+                History Mou
+            </span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/add.png" alt="">
+            <span>
+                Tambah User
+            </span> 
+        </a>
+        <button>
+            <img src="../Assets/icons_side_menu/logout.png" alt="">
+                <span>
+                    Keluar
+                </span> 
+        </button>
+    </div>
+                <!-- END OF COLLAPSED SIDE BAR ON CLICK  -->
+                                <!-- END OF SIDE BAR MENU  -->
+
+                                <!-- BEGIN OF MAIN CONTAINER CONTENT  -->
+    <div id="main" class="main container container-fluid">
+                <!-- BEGIN OF HEADER  -->
+        <div class="header">
+            <div class="header-left">
+                <img class="img-fluid" src="../aturEvent/aseets/header/logo d-vote beta.png" alt="">
+                <!-- BEGIN SEARCH BOX  -->
+                <div class="input-group mb-3  ">
+                    <input type="text" class="form-control" placeholder="&#xF002;  Cari Sesuatu" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <!-- END OF SEARCH BOX  -->
+            </div>
+            <div class="header-right">
+                <div class="rounded-img-avatar">
+                    <img src="../aturEvent/aseets/header/avatar.png" alt="">
+                </div>
+                <div class="rounded-img-notif">
+                    <img src="../aturEvent/aseets/header/notification.png" alt="">
+                </div>
+            </div>
+        </div>
+                <!-- END OF HEADER  -->
+
+                <!-- BEGIN OF FIRST CONTAINER  -->
+        <div class="first-container container-fluid">
+            <div class="text-content">
+                <p>
+                    Good Morning, Altaariaa!
+                </p>
+                <p>
+                    Have a nice day at work!
+                </p>
+            </div>
+            <img class="img-fluid float-right" src="../aturEvent/aseets/orang.png" alt="">
+        </div>
+                <!-- END OF FIRST CONTAINER  -->
+
+                <!-- BEGIN OF SECOND CONTAINER  -->
+            <h5>
+                Weekly Reports
+            </h5>
+            <div class="report-grid">
+                <div class="income">
+                    <div class="img-display">
+                        <img class="img-fluid" src="../aturEvent/aseets/second_container/income.png" alt="">
+                    </div>
+                    <div class="text-info">
+                        <p>
+                            Rp. 250.000,-
+                        </p>
+                        <p>
+                            Total Pemasukkan
+                        </p>
+                    </div>
+                </div>
+                <div class="mou">
+                    <div class="img-display">
+                        <img class="img-fluid" src="../aturEvent/aseets/second_container/mou.png" alt="">
+                    </div>
+                    <div class="text-info">
+                        <p>
+                            412
+                        </p>
+                        <p>
+                            Total Mou
+                        </p>
+                    </div>
+                </div>
+                <div class="rate">
+                    <div class="img-display">
+                        <img class="img-fluid" src="../aturEvent/aseets/second_container/rate.png" alt="">
+                    </div>
+                    <div class="text-info">
+                        <p>
+                            4,5
+                        </p>
+                        <p>
+                            Total Rating
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!-- END OF SECOND CONTAINER  -->
+
+                <!-- BEGIN OF THIRD CONTAINER  -->
+            <div class="third-container">
+                <h5>
+                    Top Rank Event
+                </h5>
+                <div class="dropdown header-right-float ">
+                    <button onclick="myFunction()" class="btn dropdown-toggle drop-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Show by <b>Latest</b></button>
+                    <div id="myDropdown" class="dropdown-menu" style="float: right;" >
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">BCA</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">MANDIRI</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">GOPAY</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">OVO</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">FASPAY</a>
+                    </div>
+                    <script type="text/javascript">
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+    
+                            // Close the dropdown menu if the user clicks outside of it
+                            window.onclick = function(event) {
+                                if (!event.target.matches('.drop-btn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-menu");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                    </script>
+                </div>
+            </div>
+            <div class="rank-content container-fluid">
+                <div class=" rank rank-1">
+                    <div class="event-title">
+                        <div class="img-title">
+                            <img src="../aturEvent/aseets/third_container/Medal 1.png" alt="">
+                        </div>
+                        <div class="txt-info">
+                            <p>
+                                Asuna Chan
+                            </p> 
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo at sapien praesent sit felis massa.
+                            </p>
+                        </div>
+                    </div>
+                    <h6>
+                        Bujang
+                    </h6>
+                    <div class="progress-box male-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/male.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Zaire Dias
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Gadis
+                    </h6>
+                    <div class="progress-box female-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/female.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Mira Westervelt
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rank rank-2">
+                    <div class="event-title">
+                        <div class="img-title">
+                            <img src="../aturEvent/aseets/third_container/Medal 2.png" alt="">
+                        </div>
+                        <div class="txt-info">
+                            <p>
+                                Nezuko Chan
+                            </p> 
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo at sapien praesent sit felis massa.
+                            </p>
+                        </div>
+                    </div>
+                    <h6>
+                        Bujang
+                    </h6>
+                    <div class="progress-box male-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/male.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Zaire Dias
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Gadis
+                    </h6>
+                    <div class="progress-box female-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/female.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Mira Westervelt
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" rank rank-3">
+                    <div class="event-title">
+                        <div class="img-title">
+                            <img src="../aturEvent/aseets/third_container/Medal 3.png" alt="">
+                        </div>
+                        <div class="txt-info">
+                            <p>
+                                Asuna Chan
+                            </p> 
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo at sapien praesent sit felis massa.
+                            </p>
+                        </div>
+                    </div>
+                    <h6>
+                        Bujang
+                    </h6>
+                    <div class="progress-box male-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/male.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Zaire Dias
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Gadis
+                    </h6>
+                    <div class="progress-box female-contestan">
+                        <p>
+                            1st
+                        </p>
+                        <img src="../aturEvent/aseets/third_container/contestan/female.png" alt="">
+                        <div class="contestan-info">
+                            <h4>
+                                Mira Westervelt
+                            </h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!-- END OF THIRD CONTAINER  -->
+    </div>
+                                <!-- END OF MAIN CONTAINER CONTENT  -->
+<script src="sidebar.js"></script>
+</body>
+</html>
