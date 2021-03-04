@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b03910148.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+                                <!-- BEGIN OF SIDE BAR MENU  -->
+    <nav id="after-nav" >
+        <div class="arrow" >
+            <img class="img-fluid openbtn"onclick="openNav()" src="../Assets/icons_side_menu/arrow.png" alt="">
+        </div>
+        <ul>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/home.png" alt="">
+            </li>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/make.png" alt="">
+            </li>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/date.png" alt="">
+            </li>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/list.png" alt="">
+            </li>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/pay.png" alt="">
+            </li>
+            <li onclick="openNav()">
+                <img src="../Assets/icons_side_menu/add.png" alt="">
+            </li>
+        </ul>
+        <button>
+            <img src="../Assets/icons_side_menu/logout.png" alt="">
+        </button>
+    </nav>
+                <!-- BEGIN OF COLLAPSED SIDE BAR ON CLICK  -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="../Assets/icons_side_menu/arrow_left.png" alt=""></a>
+        <a href="#"><img src="../Assets/icons_side_menu/home.png" alt="">
+            <span>Home</span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/make.png" alt="">
+            <span>
+                Buat Event
+            </span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/date.png" alt="">
+            <span>
+                Atur Event
+            </span> 
+            </a>
+        <a href="#"><img src="../Assets/icons_side_menu/list.png" alt="">
+            <span>
+                Atur Testimoni
+            </span>
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/pay.png" alt="">
+            <span>
+                History Mou
+            </span> 
+        </a>
+        <a href="#"><img src="../Assets/icons_side_menu/add.png" alt="">
+            <span>
+                Tambah User
+            </span> 
+        </a>
+        <button>
+            <img src="../Assets/icons_side_menu/logout.png" alt="">
+                <span>
+                    Keluar
+                </span> 
+        </button>
+    </div>
+                <!-- END OF COLLAPSED SIDE BAR ON CLICK  -->
+                                <!-- END OF SIDE BAR MENU  -->
+
+                                <!-- BEGIN OF MAIN CONTAINER CONTENT  -->
+    <div id="main" class="main container container-fluid">
+                <!-- BEGIN OF HEADER  -->
+        <div class="header">
+            <div class="header-left">
+                <img class="img-fluid" src="../aturEvent/assets/header/logo d-vote beta.png" alt="">
+                <!-- BEGIN SEARCH BOX  -->
+                <div class="input-group mb-3  ">
+                    <input type="text" class="form-control" placeholder="&#xF002;  Cari Sesuatu" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+                <!-- END OF SEARCH BOX  -->
+            </div>
+            <div class="header-right">
+                <div class="rounded-img-avatar">
+                    <img src="../aturEvent/assets/header/avatar.png" alt="">
+                </div>
+                <div class="rounded-img-notif">
+                    <img src="../aturEvent/assets/header/notification.png" alt="">
+                </div>
+            </div>
+        </div>
+                <!-- END OF HEADER  -->
+
+                <!-- BEGIN OF FIRST CONTAINER  -->
+        <div class="first-container container-fluid">
+            <div class="text-content">
+                <p>
+                    Atur Event
+                </p>
+                <p>
+                    Vivamus sapien habitasse at.
+                </p>
+            </div>
+            <img class="img-fluid float-right" src="../aturEvent/assets/Слой 1.png" alt="">
+        </div>
+                <!-- END OF FIRST CONTAINER  -->
+
+                <!-- BEGIN OF SECOND CONTAINER  -->
+                <div class="dropdown ">
+                    <button onclick="myFunction()" class="btn dropdown-toggle drop-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Show by <b>Latest</b></button>
+                    <div id="myDropdown" class="dropdown-menu" style="float: right;" >
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">BCA</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">MANDIRI</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">GOPAY</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">OVO</a>
+                        <a style="float: right;" class="dropdown-item" type="button" href="#">FASPAY</a>
+                    </div>
+                    <script type="text/javascript">
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show");
+                        }
+    
+                            // Close the dropdown menu if the user clicks outside of it
+                            window.onclick = function(event) {
+                                if (!event.target.matches('.drop-btn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-menu");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                    </script>
+                </div>
+                    <div class="second-container container-fluid">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">Nama Event</th>
+                                    <th scope="col">Sub Pemilihan</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>C3 AFFA </td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>xxxxxxxxx</td>
+                                    <td>
+                                        <button>
+                                            Ubah Event <img src="../aturEvent/assets/ubah.png" alt="">
+                                        </button>
+                                        <button>
+                                            Hapus Event <img src="../aturEvent/assets/remove.png" alt="">
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+<script src="sidebar.js"></script>
+</body>
+</html>

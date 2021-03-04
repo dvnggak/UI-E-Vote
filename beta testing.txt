@@ -1,0 +1,8 @@
+Beta Testing E-vote 
+
+1. Login Form 
+	Issue:	font awesome on toggle show & hide double 
+	Fix  : 	font awesome delete 
+2. Footer 
+	Issue: 	Contact Us list P tag element on html
+	Fix  : 	Change tag P to A (Change Style)
